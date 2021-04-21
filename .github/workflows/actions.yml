@@ -3,7 +3,7 @@ name: Farm CI
 on: [push]
 
 jobs:
-  test:
+  farm:
 
     runs-on: ubuntu-latest
     env:
@@ -47,3 +47,9 @@ jobs:
     - name: Test with pytest
       working-directory: ${{env.working-directory}}
       run: poetry run pytest
+  
+  e2e:
+    runs-on: ubuntu-latest
+    - uses: actions/checkout@v1
+    - name: Run E2E tests
+      run: docker-compose up --no-build --exit-code-from e2e-tests

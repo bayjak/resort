@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+    # End-to-end tests
+    e2e-tests:
+        build:
+            context: .
+            dockerfile: ./e2e/Dockerfile
