@@ -1,0 +1,7 @@
+README.rst
+setup.py
+farm/__init__.py
+farm.egg-info/PKG-INFO
+farm.egg-info/SOURCES.txt
+farm.egg-info/dependency_links.txt
+farm.egg-info/top_level.txt
