@@ -22,7 +22,6 @@ jobs:
           poetry-version: 1.0.10
 
     - name: Cache Poetry virtualenv
-      working-directory: ${{env.working-directory}}
       uses: actions/cache@v1
       id: cache
       with:
