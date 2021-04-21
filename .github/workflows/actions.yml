@@ -10,6 +10,8 @@ jobs:
       working-directory: ./farm
 
     steps:
+    - name: check files
+      run: ls -a
     - uses: actions/checkout@v2
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
